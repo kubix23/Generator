@@ -20,7 +20,7 @@ if __name__ == '__main__':
     pt = PunktyTrasy(num1 * 10)
     ku = Kursy(num1 * 10, a, ki, pt)
     s = Skasowanie(b, ku, a)
-    csv = Csv(num1 // 2)
+    csv = Csv(num1 // 2, pt)
     # --------------------
     b.save()
     a.save()
@@ -37,7 +37,7 @@ if __name__ == '__main__':
     pt.extend(num2)
     ku.extend(num2, a, ki, pt)
     s.extend(b, ku, a)
-    csv.extend(num2 // 2)
+    csv.extend(num2 // 2, pt)
     # --------------------
     b.save(1)
     a.save(1)
