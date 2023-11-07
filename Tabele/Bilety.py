@@ -35,6 +35,6 @@ class Bilety:
                 f.write(f"{self.id[i]},{self.dataSprzedazy[i]},{self.cena[i]},{self.rodzajBiletu[i]},{self.ulga[i]}\n")
 def randomCost():
     rodzaj_biletu = random.randint(1, 5)
-    ulga = random.choice([True, False])
+    ulga = random.choice([1, 0])
     cena = [8, 15, 30, 40, 200][rodzaj_biletu-1]
     return rodzaj_biletu, ulga, cena
