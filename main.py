@@ -13,7 +13,7 @@ from Tabele.PunktyTrasy import PunktyTrasy
 from Tabele.Skasowanie import Skasowanie
 
 if __name__ == '__main__':
-    num1 = 200
+    num1 = 20
     b = Bilety(num1 * 40)
     a = Autobusy(num1)
     ki = Kierowcy(num1)
@@ -30,7 +30,7 @@ if __name__ == '__main__':
     s.save()
     csv.save()
     # --------------------
-    num2 = 50
+    num2 = 5
     b.extend(num2)
     a.extend(num2)
     ki.extend(num2)

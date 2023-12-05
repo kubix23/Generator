@@ -22,7 +22,7 @@ class Kierowcy:
 
     def extend(self, num, end='now'):
         for i in range(10):
-            self.numerDowodu[random.randint(0, len(self.numerDowodu)-1)] = self.faker.unique.identity_card_number()
+            self.miasto[random.randint(0, len(self.miasto)-1)] = self.faker.city()
 
         self.startTime = self.endTime
         self.endTime = end
